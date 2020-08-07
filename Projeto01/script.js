@@ -12,20 +12,24 @@ function clique(img){
 
   //Configura <div> em "block" para que fique visível, inicialmente no CSS este display é none
   modal.style.display="block";
-  //Capturamos o src da imagem clicada e passamos a tag <img> que tem id="imgModal"
+  //Captura o src da imagem clicada e passamos a tag <img> que tem id="imgModal"
   modalImg.src=img.src;
-  //Capturamos o alt da imagem clicada e passamos a tag <img> que tem id="imgModal"
+  //Captura o alt da imagem clicada e passamos a tag <img> que tem id="imgModal"
   modalImg.alt=img.alt;
-  //Inserimos o texto do parâmetro alt da imagem dentro do <span> com id="txtImg"
+  //Inseri o texto do parâmetro alt da imagem dentro do <span> com id="txtImg"
   captionTexto.innerHTML=img.alt;
 
-  //Adicionamos uma função do evento onclick do <span> que usa a classe CSS "fechar"
+  //Adiciona uma função do evento onclick do <span> que usa a classe CSS "fechar"
   btFechar.onclick=function(){
-        //Para fechar a janela modal simplesmente configuramos seu display como none.
+        //Para fechar a janela modal configura display como none.
         modal.style.display="none";
   }
    
 }
+
+
+
+
 
 
 
